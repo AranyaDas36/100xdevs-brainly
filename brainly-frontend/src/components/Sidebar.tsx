@@ -3,7 +3,11 @@ import { AcademicIcon } from "./ui/AcademicIcon";
 import { TwitterIcon } from "./ui/TwitterIcon";
 import { YouTubeIcon } from "./ui/YoutubeIcon";
 
-export function Sidebar({ setFilter }) {
+interface SidebarProps {
+  setFilter: (value: string) => void;
+}
+
+export function Sidebar({ setFilter }: SidebarProps) {
     return (
         <div className="h-screen w-72 bg-white border-r fixed top-0 left-0">
             <div>
