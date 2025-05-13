@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Render or deployment files (if any temp files exist)
+*.render
