@@ -233,8 +233,8 @@ app.get("/api/v1/brain/:shareLink", async (req, res)=>{
 
 })
 
-
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost:27017/brainly").then(() => {
+//@ts-ignore
+mongoose.connect(process.env.localUrl).then(() => {
     console.log("Connected to MongoDB");
 
     app.listen(3000)
